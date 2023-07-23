@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div id="a">
+        <form action="/" method="POST" autocomplete="off" id="stuff">
+            <label for="from">
+               From? 
+            </label>
+           <input type="text" name="from" id="from" required>
+           <textarea name="msg" id="msg" cols="30" rows="10" form="stuff" autocapitalize="on" spellcheck="off" placeholder="Enter your message."> </textarea>
+           <input type="submit" value="SEND" id="send">
+        </form>
+    </div>
+</body>
+<br>
+
+<style>
+    html {
+        height: 100%;
+        background-color: black;
+    }
+
+    label {
+        margin-left: 2dvw;
+        font-family: monospace;
+        color: #2aff00;
+        font-size: 5.5dvw;
+    }
+    
+    #a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: baseline;
+    }
+    
+    #from {
+        width: 91dvw;
+        height: 16dvw;
+        margin-left: 1dvw;
+        margin-top: 1dvw;
+        margin-bottom: 3dvw;
+        padding-left: 3dvw;
+        background-color: rgb(31, 31, 31);
+        color: #2aff00;
+        border: none;
+        border-radius: 1dvw;
+        font-family: monospace;
+        font-weight: 390;
+        font-size: 8dvw;
+    }
+    
+    #msg {
+        padding-top: -20dvw;
+        padding-bottom: 60dvw;
+        width: 90dvw;
+        height: 20dvw;
+        color: #2aff00;
+        font-family: monospace;
+        font-weight: 390;
+        font-size: 6dvw;
+        background-color: rgb(31, 31, 31);
+        padding-left: 4dvw;
+        border: none;
+        border-radius: 2dvw;
+        margin-left: 1dvw;
+        padding-top: -3dvw;
+    }
+
+    #send {
+        height: 20dvw;
+        width: 75dvw;
+        margin-top: 6dvw;
+        margin-left: 10dvw;
+        border-radius: 1.7dvw;
+        background-color: rgb(54, 218, 32);
+        border-width: 0.1dvw;
+        border-style: solid;
+        border-color: black;
+        font-size: 6dvw;
+        font-family: monospace;
+        font-weight: 500;
+        box-shadow: 0 2.5dvw 15dvw #2aff00;
+    }
+    
+    #send:hover {
+        box-shadow: 0 0 22dvw #105f00;
+        font-size: 6.1dvw;
+    }
+</style>
+
+</html>
